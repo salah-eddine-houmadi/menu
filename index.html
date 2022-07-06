@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar Uno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Animation Coding</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a +href="#">Services</a></li>
+                <li class="item"><a +href="#">Contact US</a></li>
+                </li>
+                <li class="item button"><a href="#">Log In</a></li>
+                <li class="item button secondary"><a href="#">Sign Up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+
+
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous">
+        </script>
+        <script type="text/javascript">
+
+            $(function() {
+                $(".toggle").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                });
+            });
+       </script>
+
+</body>
+</html>
